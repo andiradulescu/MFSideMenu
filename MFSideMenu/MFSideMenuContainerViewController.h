@@ -21,14 +21,20 @@ typedef enum {
 typedef enum {
     MFSideMenuStateClosed, // the menu is closed
     MFSideMenuStateLeftMenuOpen, // the left-hand menu is open
-    MFSideMenuStateRightMenuOpen // the right-hand menu is open
+    MFSideMenuStateRightMenuOpen, // the right-hand menu is open
+    MFSideMenuStateLeftMenuClosed, // the left-hand menu is closed
+    MFSideMenuStateRightMenuClosed // the right-hand menu is closed
 } MFSideMenuState;
 
 typedef enum {
-    MFSideMenuStateEventMenuWillOpen, // the menu is going to open
-    MFSideMenuStateEventMenuDidOpen, // the menu finished opening
-    MFSideMenuStateEventMenuWillClose, // the menu is going to close
-    MFSideMenuStateEventMenuDidClose // the menu finished closing
+    MFSideMenuStateEventLeftMenuWillOpen, // the left menu is going to open
+    MFSideMenuStateEventLeftMenuDidOpen, // the left menu finished opening
+    MFSideMenuStateEventLeftMenuWillClose, // the left menu is going to close
+    MFSideMenuStateEventLeftMenuDidClose, // the left menu finished closing
+    MFSideMenuStateEventRightMenuWillOpen, // the right menu is going to open
+    MFSideMenuStateEventRightMenuDidOpen, // the right menu finished opening
+    MFSideMenuStateEventRightMenuWillClose, // the right menu is going to close
+    MFSideMenuStateEventRightMenuDidClose // the right menu finished closing
 } MFSideMenuStateEvent;
 
 
